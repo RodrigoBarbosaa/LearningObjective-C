@@ -47,7 +47,19 @@
     
     _textView.text = finalText;
     
+    [self helloWorld];
+    [self print:@"Rodrigo"];
+    
 }
 
+// functions
 
+// -(return type) name : (argument type) argument name...
+- (void) helloWorld {
+    NSLog(@"Hello, World!");
+}
+
+- (void) print: (NSString*) input {
+    NSLog(@"%@", input);
+}
 @end
